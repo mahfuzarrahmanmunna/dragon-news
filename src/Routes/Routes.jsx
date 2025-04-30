@@ -3,7 +3,7 @@ import Roots from "../Layout/Roots";
 import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import Career from "../Pages/Career/Career";
-import CategoryNews from "../Pages/CategoryNews/CategoryNews";
+import Categories from "../Components/Categories/Categories";
 
 export const router = createBrowserRouter([
     {
@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/category/:id',
-                Component: CategoryNews
+                Component: Categories
             }
         ]
     }
