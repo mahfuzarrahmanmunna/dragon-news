@@ -1,9 +1,10 @@
 import React from 'react';
+import ScosalLogin from '../ScosalLogin/ScosalLogin';
 
 const RightAside = () => {
     return (
         <div>
-            This is right aside
+            <ScosalLogin />
         </div>
     );
 };
