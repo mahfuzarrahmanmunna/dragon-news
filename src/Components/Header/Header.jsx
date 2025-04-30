@@ -1,7 +1,7 @@
 import { format } from 'date-fns';
 import React from 'react';
 
-const Navbar = () => {
+const Header = () => {
     return (
         <div>
             <div className='text-center flex flex-col items-center gap-3 justify-center p-4 '>
@@ -19,4 +19,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Header;
