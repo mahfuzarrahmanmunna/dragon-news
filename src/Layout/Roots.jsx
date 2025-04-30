@@ -12,7 +12,7 @@ const Roots = () => {
                 <section className='w-11/12 mx-auto my-4'>
                     <LatestNews />
                 </section>
-                <section>
+                <section className='w-11/12 mx-auto my-4 px-4 lg:px-0'>
                     <Navbar />
                 </section>
             </header>
