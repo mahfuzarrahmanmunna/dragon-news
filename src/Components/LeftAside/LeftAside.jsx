@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import CategoryNews from '../../Pages/CategoryNews/CategoryNews';
+import FallBack from '../FallBack/FallBack';
 
 const LeftAside = () => {
     return (
         <div>
-            <CategoryNews />
+            <Suspense fallback={<FallBack />}>
+                <CategoryNews />
+            </Suspense>
         </div>
     );
 };
