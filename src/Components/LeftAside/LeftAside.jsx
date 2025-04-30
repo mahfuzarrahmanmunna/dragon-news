@@ -1,9 +1,10 @@
 import React from 'react';
+import CategoryNews from '../../Pages/CategoryNews/CategoryNews';
 
 const LeftAside = () => {
     return (
         <div>
-            left aside
+            <CategoryNews />
         </div>
     );
 };

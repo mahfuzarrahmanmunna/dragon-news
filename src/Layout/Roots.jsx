@@ -4,6 +4,7 @@ import LatestNews from '../Components/LatestNews/LatestNews';
 import Header from '../Components/Header/Header';
 import Navbar from '../Components/Navbar/Navbar';
 import LeftAside from '../Components/LeftAside/LeftAside';
+import RightAside from '../Components/RightAside/RightAside';
 
 const Roots = () => {
     return (
@@ -17,15 +18,15 @@ const Roots = () => {
                     <Navbar />
                 </section>
             </header>
-            <main className='w-11/12 mx-auto'>
-                <aside className='w-3/12'>
+            <main className='w-11/12 mx-auto  lg:grid grid-cols-12 gap-8'>
+                <aside className='col-span-3'>
                     <LeftAside />
                 </aside>
-                <section className="main w-6/12">
+                <section className="main col-span-6">
                     <Outlet />
                 </section>
-                <aside className='w-3/12'>
-
+                <aside className='col-span-3'>
+                    <RightAside />
                 </aside>
             </main>
         </div>
