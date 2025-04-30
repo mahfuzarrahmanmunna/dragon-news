@@ -1,11 +1,11 @@
 import React from 'react';
 
-const LeftAside = () => {
+const CategoryNews = () => {
     return (
         <div>
-            left aside
+
         </div>
     );
 };
 
-export default LeftAside;
+export default CategoryNews;

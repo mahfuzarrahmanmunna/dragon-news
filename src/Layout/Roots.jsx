@@ -3,6 +3,7 @@ import { Outlet } from 'react-router';
 import LatestNews from '../Components/LatestNews/LatestNews';
 import Header from '../Components/Header/Header';
 import Navbar from '../Components/Navbar/Navbar';
+import LeftAside from '../Components/LeftAside/LeftAside';
 
 const Roots = () => {
     return (
@@ -16,11 +17,17 @@ const Roots = () => {
                     <Navbar />
                 </section>
             </header>
-            <section className="left_nav"></section>
-            <section className="main">
-                <Outlet />
-            </section>
-            <section className="right_nav"></section>
+            <main className='w-11/12 mx-auto'>
+                <aside className='w-3/12'>
+                    <LeftAside />
+                </aside>
+                <section className="main w-6/12">
+                    <Outlet />
+                </section>
+                <aside className='w-3/12'>
+
+                </aside>
+            </main>
         </div>
     );
 };
