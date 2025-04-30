@@ -13,7 +13,7 @@ const ScosalLogin = () => {
                     Login With Google
                 </button>
                 <button className='btn btn-outline btn-primary w-full'>
-                    <FaGithub />
+                    <FaGithub className='text-xl'/>
                     Login With Github
                 </button>
             </div>

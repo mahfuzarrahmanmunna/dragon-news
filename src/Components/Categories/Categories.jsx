@@ -7,7 +7,7 @@ const Categories = () => {
     const categories = use(fetchPromise)
     return (
         <div>
-            <h1 className='text-xl text-accent font-semibold'>All Category {categories.length}</h1>
+            <h1 className='text-xl text-primary font-semibold'>All Category {categories.length}</h1>
             <div className='grid grid-cols-1 mt-5'>
                 {
                     categories.map(category => <NavLink
