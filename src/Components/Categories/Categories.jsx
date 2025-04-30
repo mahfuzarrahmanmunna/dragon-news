@@ -11,9 +11,14 @@ const Categories = () => {
             <div className='grid grid-cols-1 mt-5'>
                 {
                     categories.map(category => <NavLink
-                        className={'btn bg-base-100 border-0 hover:bg-base-200'}
-                        key={category.id}>
-                        {category.name}</NavLink>)
+                        className={({ isActive }) =>
+                            `btn bg-base-100 border-0 hover:bg-base-200 font-semibold text-accent ${isActive ? 'bg-base-300' : ''}`
+                        }
+                        key={category.id}
+                        to={`/category/${category.id}`}
+                    >
+                        {category.name}
+                    </NavLink>)
                 }
             </div>
         </div>
