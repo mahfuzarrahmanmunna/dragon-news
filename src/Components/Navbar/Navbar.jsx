@@ -1,9 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { NavLink, useNavigate } from 'react-router';
 
 const Navbar = () => {
+    const navigate = useNavigate()
     return (
-        <div className='flex justify-between'>
+        <div className='flex justify-between items-center'>
             <div></div>
             <div className='flex gap-6'>
                 <NavLink to='/' className={({ isActive }) => `text-accent font-semibold ${isActive ? 'underline text-indigo-600' : ''}`}>Home</NavLink>
@@ -14,7 +15,7 @@ const Navbar = () => {
                 <figure>
                     <img src="https://i.postimg.cc/D0btRm47/user.png" alt="" />
                 </figure>
-                <button className='btn btn-primary px-8'>
+                <button onClick={() => navigate('/auth/login')} className='btn btn-primary px-8'>
                     Login
                 </button>
             </div>

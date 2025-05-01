@@ -6,6 +6,8 @@ import Career from "../Pages/Career/Career";
 import CategoryNews from "../Pages/CategoryNews/CategoryNews";
 import FallBack from "../Components/FallBack/FallBack";
 import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
+import AuthLayout from "../Layout/Auth/AuthLayout";
 
 export const router = createBrowserRouter([
     {
@@ -34,14 +36,15 @@ export const router = createBrowserRouter([
     },
     {
         path: '/auth',
-        element: <h3>Authentication Layout</h3>,
+        Component: AuthLayout,
         children: [
             {
                 path: '/auth/login',
                 Component: Login
             },
             {
-                path: '/auth/register'
+                path: '/auth/register',
+                Component: Register
             }
         ]
     }
