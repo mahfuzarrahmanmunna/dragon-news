@@ -5,6 +5,7 @@ import About from "../Pages/About/About";
 import Career from "../Pages/Career/Career";
 import CategoryNews from "../Pages/CategoryNews/CategoryNews";
 import FallBack from "../Components/FallBack/FallBack";
+import Login from "../Pages/Login/Login";
 
 export const router = createBrowserRouter([
     {
@@ -36,8 +37,11 @@ export const router = createBrowserRouter([
         element: <h3>Authentication Layout</h3>,
         children: [
             {
-                path: '/auth/login'
-                
+                path: '/auth/login',
+                Component: Login
+            },
+            {
+                path: '/auth/register'
             }
         ]
     }
