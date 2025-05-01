@@ -9,6 +9,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import AuthLayout from "../Layout/Auth/AuthLayout";
 import ErrorPage from "../Pages/Error/ErrorPage";
+import NewsDetails from "../Pages/NewsDetails/NewsDetails";
 
 export const router = createBrowserRouter([
     {
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
                 Component: Register
             }
         ]
+    },
+    {
+        path: "news-details/:id",
+        Component: NewsDetails,
     },
     {
         path: '*',
