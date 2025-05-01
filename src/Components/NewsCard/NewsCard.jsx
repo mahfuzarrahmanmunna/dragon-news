@@ -39,11 +39,11 @@ const NewsCard = ({ news }) => {
 
             {/* Body */}
             <div className="px-6 py-2">
-                <h2 className="text-lg font-bold mb-5">{title}</h2>
+                <h2 className="text-lg font-bold mb-5 hover:underline hover:cursor-pointer">{title}</h2>
                 <img
                     src={thumbnail_url}
                     alt="news"
-                    className="w-full h-52 object-cover rounded-md mb-8"
+                    className="w-full object-cover rounded-md mb-8"
                 />
                 <p className="text-sm text-gray-700 leading-relaxed mb-1">
                     <span className="text-gray-500">

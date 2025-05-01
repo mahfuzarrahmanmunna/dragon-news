@@ -19,13 +19,13 @@ const Roots = () => {
                 </section>
             </header>
             <main className='w-11/12 mx-auto  lg:grid grid-cols-12 gap-8'>
-                <aside className='col-span-3 h-fit sticky top-0'>
+                <aside className='col-span-3 h-fit lg:sticky top-0'>
                     <LeftAside />
                 </aside>
                 <section className="main col-span-6">
                     <Outlet />
                 </section>
-                <aside className='col-span-3 sticky top-0 h-fit'>
+                <aside className='col-span-3 lg:sticky top-0 h-fit'>
                     <RightAside />
                 </aside>
             </main>

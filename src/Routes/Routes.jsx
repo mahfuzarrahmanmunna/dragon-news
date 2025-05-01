@@ -54,6 +54,8 @@ export const router = createBrowserRouter([
     {
         path: "news-details/:id",
         Component: NewsDetails,
+        loader: () => fetch('/news.json'),
+        hydrateFallbackElement: <FallBack />
     },
     {
         path: '*',
