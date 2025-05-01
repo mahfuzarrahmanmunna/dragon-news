@@ -30,5 +30,15 @@ export const router = createBrowserRouter([
                 hydrateFallbackElement: <FallBack />
             }
         ]
+    },
+    {
+        path: '/auth',
+        element: <h3>Authentication Layout</h3>,
+        children: [
+            {
+                path: '/auth/login'
+                
+            }
+        ]
     }
 ])
