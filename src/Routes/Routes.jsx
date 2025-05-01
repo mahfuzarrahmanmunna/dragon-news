@@ -8,11 +8,13 @@ import FallBack from "../Components/FallBack/FallBack";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import AuthLayout from "../Layout/Auth/AuthLayout";
+import ErrorPage from "../Pages/Error/ErrorPage";
 
 export const router = createBrowserRouter([
     {
         path: '/',
         Component: Roots,
+
         children: [
             {
                 path: '/',
@@ -47,5 +49,9 @@ export const router = createBrowserRouter([
                 Component: Register
             }
         ]
+    },
+    {
+        path: '*',
+        Component: ErrorPage
     }
 ])
