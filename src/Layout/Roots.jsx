@@ -1,12 +1,14 @@
 import React from 'react';
-import { Outlet } from 'react-router';
+import { Outlet, useNavigation } from 'react-router';
 import LatestNews from '../Components/LatestNews/LatestNews';
 import Header from '../Components/Header/Header';
 import Navbar from '../Components/Navbar/Navbar';
 import LeftAside from '../Components/LeftAside/LeftAside';
 import RightAside from '../Components/RightAside/RightAside';
+import FallBack from '../Components/FallBack/FallBack';
 
 const Roots = () => {
+    const { state } = useNavigation()
     return (
         <div className='font-poppins'>
             <header>
@@ -23,7 +25,9 @@ const Roots = () => {
                     <LeftAside />
                 </aside>
                 <section className="main col-span-6">
-                    <Outlet />
+                    {
+                        state == 'loading' ? <FallBack /> : <Outlet />
+                    }
                 </section>
                 <aside className='col-span-3 lg:sticky top-0 h-fit'>
                     <RightAside />

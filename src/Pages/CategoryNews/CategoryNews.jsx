@@ -22,7 +22,7 @@ const CategoryNews = () => {
         }
         else {
             const newsFilter = data.filter(news => news.category_id === convertId)
-            console.log(newsFilter);
+            // console.log(newsFilter);
 
             setCategoryNews(newsFilter)
         }

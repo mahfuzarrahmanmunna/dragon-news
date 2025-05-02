@@ -6,7 +6,7 @@ import FallBack from '../../Components/FallBack/FallBack';
 const PrivateRoute = ({ children }) => {
     const { user, loading } = use(AuthContext)
     const location = useLocation()
-    console.log(location);
+    // console.log(location);
 
     if (loading) {
         return <FallBack />
