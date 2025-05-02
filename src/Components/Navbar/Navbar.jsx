@@ -12,7 +12,7 @@ const Navbar = () => {
     }
     return (
         <div className='flex justify-between items-center'>
-            <div>{user && user.email}</div>
+            <div className='lg:flex hidden'>{user && user.email}</div>
             <div className='flex gap-6'>
                 <NavLink to='/' className={({ isActive }) => `text-accent font-semibold ${isActive ? 'underline text-indigo-600' : ''}`}>Home</NavLink>
                 <NavLink to='/about' className={({ isActive }) => `text-accent font-semibold ${isActive ? 'underline text-indigo-600' : ''}`}>About</NavLink>

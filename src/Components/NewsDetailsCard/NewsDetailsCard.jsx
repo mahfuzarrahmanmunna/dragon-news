@@ -52,7 +52,7 @@ const NewsDetailsCard = ({ news }) => {
             )}
 
             <div>
-                <button onClick={() => navigate(`/category/${category_id}`)} className="flex items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white px-4 py-2 rounded-md text-sm font-semibold mt-6">
+                <button onClick={() => navigate(`/category/${category_id}`)} className="flex items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white px-4 py-2 rounded-md text-sm font-semibold mt-6 cursor-pointer">
                     <FaArrowLeft /> All news in this category
                 </button>
             </div>
